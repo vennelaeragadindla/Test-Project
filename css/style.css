@@ -1,0 +1,137 @@
+.maincomponent
+{ 
+    background-color: aqua;
+    text-align: center;
+    color: black;
+}
+.boxcls{ 
+    display: flex;
+    border: solid pink;
+}
+.box{
+    width: 200px;
+    height: 180px;
+    font-size: 5em;
+    background-color: aliceblue;
+    border-radius: 20px;
+    padding: 50px;
+    border: solid black;    
+}
+#box1{ 
+    background-color: bisque;
+    transition: width 2s;
+}
+#box2{ 
+    background-color: chartreuse;
+    transition: width 4s;
+}
+#box3{ 
+    background-color: coral;
+    transition: width 4s;
+}
+#box4{ 
+    background-color: darkolivegreen;
+    transition: width 5s;
+}
+#box5{ 
+    background-color: goldenrod;
+    transition: width 3s;
+}
+#box1:hover{ 
+    background-color: chocolate;
+    width: 300px;
+}
+#box2:hover{ 
+    background-color: darkblue;
+    width: 400px;
+}
+#box3:hover{ 
+    background-color: hotpink;
+    width: 500px;
+}
+#box4:hover{ 
+    background-color: blueviolet;
+    width: 100px;
+}
+#box5:hover{ 
+    background-color: darkgrey;
+    width: 300px;
+}
+.newboxs{
+    border: solid black;
+}
+.newbox{ 
+    width: 100px;
+    height: 50ppx;
+    font-size: 20px;
+    background-color: black;
+    transition: width 3s;
+}
+#b1{ 
+    background-color: cadetblue;
+    transition-timing-function:linear ;
+}
+#b1:hover{ 
+    background-color: cornflowerblue;
+    width: 200px;
+}
+.newrotate{ 
+    width: 180px;
+    height: 180px;
+    font-size: 20px;
+    background-color: darkcyan;
+    transition: width 2s,height 2s,transform 2s;  
+}
+#newrotate:hover{ 
+    width: 300px;
+    height: 300px;
+    background-color: darkslateblue;
+    transform: rotate(180deg);
+}
+.scrolltext{ 
+    font-family: 'Lucida Grande';
+    font-style: oblique;
+    font-size: 30px;
+    width: 100%;
+    color: blueviolet;
+    overflow: hidden;
+    box-sizing: border-box;
+    border: 2px solid red;
+    white-space: nowrap;
+}
+.scrolltext span{ 
+    display: inline-block;
+    padding-left: 100%;
+    animation-name: scroll-right-left;
+    animation-duration: 15s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+@keyframes scroll-right-left{ 
+    from{transform: translateX(100%);}
+    to{ transform: translateX(-100%);}
+
+} 
+.scrollright{ 
+    font-family: 'Lucida Grande';
+    font-style: oblique;
+    font-size: 30px;
+    width: 100%;
+    color: blueviolet;
+    overflow: hidden;
+    box-sizing: border-box;
+    border: 2px solid red;
+    white-space: nowrap;
+}
+.scrollright span{ 
+    display: inline-block;
+    padding-left: 100%;
+    animation-name: scroll-left-right;
+    animation-duration: 15s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+@keyframes scroll-left-right{ 
+    from{transform: translateY(100%);}
+    to{ transform: translateY(-100%);}
+} 

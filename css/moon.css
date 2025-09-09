@@ -1,0 +1,42 @@
+body{ 
+    background-color: black;
+    margin: 0%;
+    height: 100vh;
+    overflow: hidden;
+    
+}
+.moon{ 
+    position: absolute;
+    width: 120px;
+    height: 120px;
+    background-color: aliceblue;
+    top: 100px;
+    left: 70%;
+    border-radius: 50%;
+    box-shadow: 0 0 40px 15px rgb(129, 127, 127);
+    animation-name: shadow-ani;
+    animation-duration:3s;
+    animation-timing-function:ease-in-out;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+@keyframes shadow-ani { 
+    from{box-shadow: 0 0 15px 9px rgb(129, 127, 127)};
+    to{box-shadow: 0 0 60px 25px rgb(129, 127, 127)};
+}
+.star{ 
+    position: absolute;
+    width: 4px;
+    height: 4px;
+    background-color: aliceblue;
+    border-radius: 50%;
+    box-shadow:  0 0  1px 0.5px rgb(119, 116, 116);
+}
+#s1{
+    top: 100px;
+    left: 70px;
+}
+#s2{ 
+    top: 150px;
+    right: 20px;
+}
